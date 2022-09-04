@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("background\ image.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ 
+
+#formWrapper {
+    background-color: rgba(0, 0, 0, 0.45);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formContainer {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 30%;
+    height: 90vh;
+    border-radius: 7px;
+    padding: 4rem;
+    color: #3f3939;
+}
+
+#formContainer h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 1rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #2e2e32;
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+    background-color: rgb(251, 13, 13);
+    color: white;
+    font-weight: bolder;
+    margin-top: 1rem;
+    font-size: medium;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-size: smaller;
+}
+
+#checkboxContainer {
+    display: flex;
+    color: #8c8c9c;
+}
+
+#checkbox {
+    width: 15px !important;
+    margin-right: 3px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.newUser{
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+}
+
+/* Mobile Screen */
+@media (max-width:700px) {
+    #formContainer {
+        width: 90%;
+    }
+}
+
+/* Tablet Screen */
+@media (min-width:700px) and (max-width:1000px) {
+    #formContainer {
+        width: 60%;
+    }
+}
+
+@media print {
+    input[type="submit"] {
+        background-color: rgb(13, 69, 251);
+    }
+}
