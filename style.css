@@ -1,0 +1,295 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body .allContent .navBar {
+  background-image: url("../Images/banner.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 2em 5em;
+  color: #fff;
+}
+body .allContent .navBar .navBarHeader {
+  display: flex;
+  justify-content: space-between;
+}
+body .allContent .navBar .navBarHeader ul {
+  display: flex;
+}
+body .allContent .navBar .navBarHeader ul li {
+  list-style: none;
+  text-transform: uppercase;
+  margin: 0 2em;
+}
+body .allContent .navBar .navBarHeader ul .navBarButton {
+  background-color: #fff;
+  border-radius: 2em;
+  height: 1.5em;
+  padding: 0.5em 1em;
+  margin-top: -0.5em;
+  color: #000;
+}
+body .allContent .navBar .navBarContent {
+  text-align: center;
+  align-content: center;
+  margin: 10% 0;
+}
+body .allContent .navBar .navBarContent h1 {
+  font-size: 3em;
+  font-family: "Quicksand", sans-serif;
+}
+body .allContent .navBar .navBarContent input {
+  background-color: #fff;
+  border: none;
+  padding: 1em 2em;
+  border-radius: 4em;
+  margin: 2em;
+  font-size: medium;
+}
+body .allContent .navBar .navBarContent input:hover {
+  cursor: pointer;
+}
+body .allContent .navBar .navBarBottom {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 3em;
+  justify-content: center;
+  width: 80vw;
+  margin: 4em auto;
+}
+body .allContent .navBar .navBarBottom div {
+  margin: 2em 4em;
+}
+body .allContent .navBar .navBarBottom div p {
+  text-transform: uppercase;
+  margin: 0 0 1em 0.5em;
+  color: #000;
+}
+body .allContent .navBar .navBarBottom div input {
+  width: 10em;
+  border-radius: 5em;
+  padding: 0.7em 1.5em;
+  border: none;
+  background-color: #e2e0e0;
+}
+body .allContent .navBar .navBarBottom div .bookingButton {
+  background-color: #000;
+  color: #fff;
+  margin-top: 1.5em;
+}
+body .allContent .navBar .navBarBottom div .bookingButton:hover {
+  cursor: pointer;
+}
+body .allContent main {
+  padding: 2em 5em;
+}
+body .allContent main .mainUpperContent {
+  display: flex;
+}
+body .allContent main .mainUpperContent .mainUpperLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body .allContent main .mainUpperContent .mainUpperLeft h1 {
+  text-transform: capitalize;
+}
+body .allContent main .mainUpperContent .mainUpperLeft .accommodationText {
+  color: #9d9c9c;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.5em;
+}
+body .allContent main .mainUpperContent .mainUpperLeft p {
+  width: 80%;
+}
+body .allContent main .mainUpperContent .mainUpperLeft .bookingButton {
+  background-color: #000;
+  color: #fff;
+  margin-top: 1.5em;
+  padding: 1em 2em;
+  border-radius: 1em;
+  width: 9em;
+}
+body .allContent main .mainUpperContent .mainUpperLeft .bookingButton:hover {
+  cursor: pointer;
+}
+body .allContent main .mainUpperContent .mainUpperRight {
+  width: 50%;
+}
+body .allContent main .mainUpperContent .mainUpperRight .secondImage {
+  padding: 0 0.5em;
+}
+body .allContent main .mainBottomContent {
+  display: flex;
+  flex-direction: row;
+  margin: 3em 0;
+}
+body .allContent main .mainBottomContent .mainBottomLeft {
+  width: 50%;
+}
+body .allContent main .mainBottomContent .mainBottomRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: end;
+  align-items: flex-end;
+  width: 40%;
+}
+body .allContent main .mainBottomContent .mainBottomRight .breakFast {
+  color: #9d9c9c;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.5em;
+}
+body .allContent main .mainBottomContent .mainBottomRight input {
+  background-color: #000;
+  color: #fff;
+  margin-top: 1.5em;
+  padding: 1em 2em;
+  border-radius: 1em;
+  width: 9em;
+  display: flex;
+  justify-content: end;
+}
+body .allContent main .mainBottomContent .mainBottomRight .bookingButtons:hover {
+  cursor: pointer;
+}
+body .allContent .middleContent {
+  background-color: #002B5B;
+  padding: 2em 5em;
+  display: flex;
+  color: #fff;
+  font-family: "Crimson Text", serif;
+  font-size: 1.2em;
+}
+body .allContent .middleContent .middleLeftContent {
+  margin: 0 4em;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .allContent .middleContent .middleRight {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+body .allContent .middleContent .middleRight img {
+  width: 80%;
+}
+body .allContent .testimonial {
+  padding: 2em 5em;
+  background-image: url("../Images/tes_bg.jpg");
+  height: 80vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+body .allContent .testimonial h1 {
+  color: #000;
+  text-align: center;
+}
+body .allContent .testimonial .testimonialContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1em auto;
+  width: 70vw;
+}
+body .allContent .testimonial .testimonialContent .commonContent {
+  background-color: orange;
+  margin: 1em;
+}
+body .allContent .testimonial .testimonialContent .commonContent div {
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+body .allContent .testimonial .testimonialContent .commonContent p {
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+body .allContent .testimonial .slider {
+  display: flex;
+  justify-content: center;
+}
+body .allContent .testimonial .slider .sliderDots {
+  padding: 0.5em;
+  background-color: #000;
+  margin: 0.5em;
+  border-radius: 50%;
+}
+body .allContent .testimonial .slider .last {
+  background-color: orange;
+}
+body .allContent footer {
+  background-color: #2A0944;
+  display: flex;
+  color: #fff;
+  padding: 2em 5em;
+  height: 30vh;
+}
+body .allContent footer .leftFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  font-family: "Crimson Text", serif;
+}
+body .allContent footer .leftFooter h1 {
+  font-size: 2em;
+}
+body .allContent footer .leftFooter h4 {
+  font-size: 2em;
+}
+body .allContent footer .leftFooter p {
+  font-size: 1.5em;
+}
+body .allContent footer .rightFooter {
+  background: orange;
+  height: 60vh;
+  border-radius: 1.5em;
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  flex-direction: column;
+  position: relative;
+  top: -19em;
+  right: -7em;
+}
+body .allContent footer .rightFooter input {
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 1em;
+  border: none;
+  outline: none;
+}
+body .allContent footer .rightFooter textarea {
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 1em;
+  border: none;
+  outline: none;
+}
+body .allContent footer .rightFooter .footerButton {
+  background-color: #000;
+  color: #fff;
+  margin-top: 1.5em;
+  padding: 1em 2em;
+  border-radius: 1em;
+  width: 9em;
+  margin: 1em auto;
+}
+body .allContent footer .rightFooter .footerButton:hover {
+  cursor: pointer;
+}
+body .allContent .bottomFooter p {
+  text-transform: capitalize;
+  text-align: center;
+  padding: 1em 0;
+}/*# sourceMappingURL=style.css.map */
