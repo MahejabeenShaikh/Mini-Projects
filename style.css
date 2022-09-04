@@ -1,0 +1,57 @@
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(148, 187, 233) 100%);
+}
+
+#mainHeading {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.cardContainer1 {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.cardContainer2 {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.cardContainer3 {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+ .card {
+  background-color: rgb(0, 0, 0);
+  width: 18vw;
+  height: 18vw;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userName {
+  font-size: larger;
+  text-transform: uppercase;
+  color: cornsilk;
+  text-decoration: underline;
+}
+
+.linkBtn {
+  background-color: rgb(235, 71, 71);
+  color: rgb(7, 152, 241);
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+.displayPic {
+  border-radius: 50%;
+} 
