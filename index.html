@@ -1,38 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>BMI Calculator</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <title>Scientific Calculator </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 mx-auto main">
-        <h1 class="text-center">Body Mass Index</h1>
-        <p class="text-center space">Calculate your BMI.</p>
-        <form>
-            <div class="form-group row ">
-              <label for="Height" class="col-sm-2 col-form-label">Height</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="Height" placeholder="Type here in cm.">
-              </div>
-            </div>
-            <div class="form-group row space">
-                <label for="Weight" class="col-sm-2 col-form-label">Weight</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="Weight" placeholder="Type here in kg.">
-                </div>
-              </div>
-          </form>
-        <button type="submit" class="btn btn-block" onclick="main()">Calculate</button>
-        <p id="output" class="text-center"></p>
-      </div>
+
+<div id="app">
+  <div class="calculator">
+    <button @click="changeModeEvent" class="toggle-button">
+      <p v-if="changeMode">Show Advanced Mode &nbsp; &nbsp; &#9864;</p>
+      <p v-else>Show Basic Mode &nbsp; &nbsp; &#9862;</p>
+    </button>
+    <div class="results">
+      <input class="input" v-model="current" />
+    </div>
+    <div class="mode" v-if="changeMode">
+      <button class="button" @click="press">7</button>
+      <button class="button" @click="press">8</button>
+      <button class="button" @click="press">9</button>
+      <button class="button" @click="press">*</button>
+      <button class="button" @click="press">&#60;=</button>
+      <button class="button" @click="press">C</button>
+      <button class="button" @click="press">4</button>
+      <button class="button" @click="press($event)">5</button>
+      <button class="button" @click="press">6</button>
+      <button class="button" @click="press">/</button>
+      <button class="button" @click="press">(</button>
+      <button class="button" @click="press">)</button>
+      <button class="button" @click="press">1</button>
+      <button class="button" @click="press">2</button>
+      <button class="button" @click="press">3</button>
+      <button class="button" @click="press">-</button>
+      <button class="button" @click="press">x ²</button>
+      <button class="button" @click="press">±</button>
+      <button class="button" @click="press">0</button>
+      <button class="button" @click="press">.</button>
+      <button class="button" @click="press">%</button>
+      <button class="button" @click="press">+</button>
+      <button class="button equal-sign" @click="press">=</button>
+    </div>
+    <div class="mode" v-else>
+      <button class="button" @click="press">sin</button>
+      <button class="button" @click="press">cos</button>
+      <button class="button" @click="press">tan</button>
+      <button class="button" @click="press">x^</button>
+      <button class="button" @click="press">&#60;=</button>
+      <button class="button" @click="press">C</button>
+      <button class="button" @click="press">log</button>
+      <button class="button" @click="press">ln</button>
+      <button class="button" @click="press">e</button>
+      <button class="button" @click="press">∘</button>
+      <button class="button" @click="press">rad</button>
+      <button class="button" @click="press">√</button>
+      <button class="button" @click="press">7</button>
+      <button class="button" @click="press">8   </button>
+      <button class="button" @click="press">9</button>
+      <button class="button" @click="press">/</button>
+      <button class="button" @click="press">x ²</button>
+      <button class="button" @click="press">x !</button>
+      <button class="button" @click="press">4</button>
+      <button class="button" @click="press">5</button>
+      <button class="button" @click="press">6</button>
+      <button class="button" @click="press">*</button>
+      <button class="button" @click="press">(</button>
+      <button class="button" @click="press">)</button>
+      <button class="button" @click="press">1</button>
+      <button class="button" @click="press">2</button>
+      <button class="button" @click="press">3</button>
+      <button class="button" @click="press">-</button>
+      <button class="button" @click="press">%</button>
+      <button class="button" @click="press">±</button>
+      <button class="button" @click="press">0</button>
+      <button class="button" @click="press">.</button>
+      <button class="button" @click="press">&#x003C0;</button>
+      <button class="button" @click="press">+</button>
+      <button class="button equal-sign" @click="press">=</button>
     </div>
   </div>
-  <script src="script.js"></script>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script><script  src="script.js"></script>
+
 </body>
 </html>
